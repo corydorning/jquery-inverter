@@ -9,10 +9,8 @@
  */
 
 (function($) {
-  $.fn.inverter = function(options) {
+  $.fn.inverter = function() {
     var $images = this,
-        
-        image = $images.toArray(),
 
         invert =  {
           canvas: function() {
