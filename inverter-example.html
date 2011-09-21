@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Invert Image Plug-in Demo</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="Cory Dorning">
+
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <p>A demo showcasing the jQuery plugin, Inverter. Be sure to check out the <a href="http://corydorning.com/projects/inverter">Inverter project page</a> or just <a href="https://github.com/corydorning/inverter">grab the source code</a>.</p>
+
+    <p><img src="jquery-logo.png" alt="jQuery. write less. do more." class="jquery-logo" /></p>
+
+    <p><img src="google-logo.png" alt="The Google" class="google-logo" /></p>
+
+    <button>Toggle Inverter!</button>
+    <button>jQuery Inverter!</button>
+    <button>Google Inverter!</button>
+  </div><!-- .container -->
+
+
+  <!-- Javascript at the bottom for faster page loading -->
+  <!-- load jQuery script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+  <!-- load invert image plugin -->
+  <script src="jquery-inverter.js"></script>
+
+  <!-- demo scripts -->
+  <script>
+    $('button:eq(0)').click(function() {
+      $('.jquery-logo, .google-logo').inverter();
+    });
+
+    $('button:eq(1)').click(function() {
+      $('.jquery-logo').inverter();
+    });
+
+    $('button:eq(2)').click(function() {
+      $('.google-logo').inverter();
+    });
+  </script>
+</body>
+</html>

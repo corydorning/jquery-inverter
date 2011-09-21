@@ -1,0 +1,48 @@
+/* inverter README
+ *
+ * Last modified by: Cory Dorning
+ * Last modified on: 09/20/2011
+ *
+ * inverter is a jQuery plugin that uses the HTML5 canvas
+ * element or CSS filters to invert the colors of an image.
+ *
+ */
+
+ Requirements
+------------------
+To use inverter, it is recommended you use the latest version
+of jQuery 1.6. You then need to reference the jQuery library
+followed the inverter JavaScript file:
+
+<!-- load jQuery library -->
+<script src="/common/js/libs/jquery-1.6.min.js"></script>
+
+<!-- load inverter plugin -->
+<script src="jquery-inverter.js"></script>
+
+Now you are ready to use inverter! Below is some example code
+on the ways you can use it.
+
+
+Page Load
+------------------
+
+<!-- invert all img elements -->
+<script>
+(function($) {
+  $('img').inverter;
+})(jQuery);
+</script>
+
+
+Click Event
+------------------
+
+<!-- invert all img elements when a link is clicked -->
+<script>
+(function($) {
+  $('a').click(function() {
+    $('img').inverter();
+  });
+})(jQuery);
+</script>
