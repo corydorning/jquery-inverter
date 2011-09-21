@@ -3,8 +3,10 @@
  * Last modified by: Cory Dorning
  * Last modified on: 09/20/2011
  *
- * Invert Image is a jQuery plugin that uses canvas (or appropriate
- * IE filters) to invert the colors of an image.
+ * inverter is a jQuery plugin that uses the HTML5 canvas
+ * element or CSS filters to invert the colors of an image.
+ *
+ */
  *
  * @TODO
  * =Track State
