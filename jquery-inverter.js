@@ -7,12 +7,6 @@
  * element or CSS filters to invert the colors of an image.
  *
  */
- *
- * @TODO
- * =Track State
-    Setup method for toggling the state
- *
- */
 
 (function($) {
   $.fn.inverter = function(options) {
