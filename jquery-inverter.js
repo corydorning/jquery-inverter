@@ -20,7 +20,7 @@
                     canvas.setAttribute('width', img.width);
     
                   var context = canvas.getContext('2d');
-                    context.drawImage(img, 0, 0);
+                    context.drawImage(img, 0, 0, img.width, img.height);
 
                   var imgData = context.getImageData(0, 0, canvas.width, canvas.height),
                       data = imgData.data;
