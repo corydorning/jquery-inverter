@@ -8,7 +8,7 @@
  *
  */
 
-(function($) {
+;(function($) {
   $.fn.inverter = function() {
     var $images = this,
 
